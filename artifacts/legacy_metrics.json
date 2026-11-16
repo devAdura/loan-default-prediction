@@ -1,0 +1,111 @@
+{
+  "dataset": "Data Science Nigeria / OneFi Credit Risk Prediction",
+  "target": "Bad = 1 (source dataset's Bad class)",
+  "deployed_model": "Random Forest",
+  "decision_threshold": 0.44,
+  "threshold_selection": "Threshold chosen on validation data to maximise F1-score; final metrics use an untouched test set.",
+  "validation_model_comparison": [
+    {
+      "model": "Random Forest",
+      "threshold": 0.44,
+      "accuracy": 0.713,
+      "precision": 0.394,
+      "recall": 0.6,
+      "f1_score": 0.476,
+      "roc_auc": 0.719,
+      "confusion_matrix": [
+        [
+          510,
+          175
+        ],
+        [
+          76,
+          114
+        ]
+      ]
+    },
+    {
+      "model": "Gradient Boosting",
+      "threshold": 0.22,
+      "accuracy": 0.733,
+      "precision": 0.413,
+      "recall": 0.547,
+      "f1_score": 0.471,
+      "roc_auc": 0.71,
+      "confusion_matrix": [
+        [
+          537,
+          148
+        ],
+        [
+          86,
+          104
+        ]
+      ]
+    },
+    {
+      "model": "Logistic Regression",
+      "threshold": 0.48,
+      "accuracy": 0.688,
+      "precision": 0.368,
+      "recall": 0.611,
+      "f1_score": 0.459,
+      "roc_auc": 0.696,
+      "confusion_matrix": [
+        [
+          486,
+          199
+        ],
+        [
+          74,
+          116
+        ]
+      ]
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.676,
+    "precision": 0.363,
+    "recall": 0.644,
+    "f1_score": 0.464,
+    "roc_auc": 0.712,
+    "confusion_matrix": [
+      [
+        469,
+        216
+      ],
+      [
+        68,
+        123
+      ]
+    ]
+  },
+  "training_rows": 3500,
+  "test_rows": 876,
+  "bad_rate": 0.218,
+  "feature_names": [
+    "age_years",
+    "bank_account_type",
+    "employment_status",
+    "education",
+    "loan_number",
+    "loan_amount",
+    "loan_term_days",
+    "total_due",
+    "loan_cost_ratio",
+    "previous_loan_count",
+    "previous_avg_amount",
+    "previous_max_amount",
+    "previous_avg_term_days",
+    "previous_repayment_rate",
+    "previous_avg_delay_days",
+    "previous_max_delay_days",
+    "previous_total_amount",
+    "previous_avg_cost_ratio"
+  ],
+  "important_limitations": [
+    "The dataset is historical Nigerian OneFi lending data and should not be treated as a current national credit bureau dataset.",
+    "Most training applications are repeat-loan applications; current loan number starts at 2. True new-to-credit applicants are underrepresented.",
+    "The model should support, not replace, human lending review and applicable Nigerian credit policies."
+  ]
+}

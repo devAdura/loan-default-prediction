@@ -1,0 +1,19 @@
+{
+  "sha256": {
+    "app.py": "5b14a557ca79906dfdb25fcb550a592a974326b66124adc3124171845ea49205",
+    "nigeria_features.py": "05dd62242313e8e3bdb7e566c079d8e2c486ef5e4a3029839b0ba8e9ed1c303c",
+    "train_nigeria_model.py": "8d45063ddfbb907736e934b8f13692351d5188c832c7be8e412552bd07828b86",
+    "explanations.py": "2a5a4edbd3f805febe13e6270999d2b32835ae7902badb10ca38521d5f5806b7",
+    "generate_report_figures.py": "c0c1c9adacb3e13388fa3ac8b387174d815ee54dfe5c71e13e854c37f0fd112e",
+    "requirements-lock.txt": "ad1c054b0d55c23e1950a7ba9823a5e3c85e765a6e03a60d673c72c4071d1c0d",
+    "artifacts/credit_risk_nigeria_model.joblib": "704d34a9f1cf6a69bda29fc244df887470d707c43641cb8eda333143d28d1e5c",
+    "artifacts/nigeria_metrics.json": "28d81d67f0977dff11be8fec6e1af5ac06fccc555740d49ebc47a0badebbdf74"
+  },
+  "local_validation": {
+    "pytest": "23 passed",
+    "dependency_check": "No broken requirements found",
+    "figure_metric_reproduction": "passed",
+    "figures_reviewed": 7,
+    "remote_ci": "not run, repository not pushed"
+  }
+}

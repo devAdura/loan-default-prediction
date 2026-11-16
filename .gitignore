@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.db
+*.db-*
+.env
+.streamlit/secrets.toml
+data/
+artifacts/*.private.json
+artifacts/test_predictions.csv
+artifacts/ui_screenshots/

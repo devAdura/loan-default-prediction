@@ -1,0 +1,36 @@
+{
+  "run_id": "20261116T181952Z",
+  "sample_rows": 874,
+  "baseline": -1.4324641461276415,
+  "scale": "log_odds",
+  "dependence": "tree_path_dependent, no separate background rows",
+  "shap_version": "0.54.1",
+  "max_reconstruction_error": 5.773159728050814e-15,
+  "representative_case_types": [
+    "threshold_adjacent",
+    "true_positive",
+    "true_negative",
+    "false_positive",
+    "false_negative"
+  ],
+  "global_mean_absolute_shap": {
+    "age_years": 0.11570154886112459,
+    "bank_account_type": 0.1138775903845632,
+    "employment_status": 0.03819414187201603,
+    "education": 0.0014177551044098759,
+    "loan_number": 0.020368249379540376,
+    "loan_amount": 0.0015654853436646299,
+    "loan_term_days": 0.01821716866004624,
+    "total_due": 0.009678046977217239,
+    "loan_cost_ratio": 0.15824658249928927,
+    "previous_loan_count": 0.029674725082368354,
+    "previous_avg_amount": 0.040021829233581205,
+    "previous_max_amount": 0.0055371737748798515,
+    "previous_avg_term_days": 0.033288623530374546,
+    "previous_repayment_rate": 0.04109773233937871,
+    "previous_avg_delay_days": 0.46939148791513646,
+    "previous_max_delay_days": 0.047452830592623126,
+    "previous_total_amount": 0.057708465686785296,
+    "previous_avg_cost_ratio": 0.03803029658292699
+  }
+}
